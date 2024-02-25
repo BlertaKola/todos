@@ -1,0 +1,55 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create four columns with equal width */
+    gap: 20px; /* Add space between columns */
+  }
+  
+  .column {
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: add a border for better visibility */
+  }
+  .card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #2d304d;
+    border: none;
+    color: #365170;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   }
+   
+   button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   button:hover span {
+    padding-right: 15px;
+   }
+   
+   button:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
